@@ -26,20 +26,18 @@ class MainActivity : AppCompatActivity() {
             }
 
             //ACTUALIZAR INFO
-            room.daoUsuario().actualizarUsuario("Charline Mora", "Chars31", "12345")
-            println("Se actualizó el registro")
-            usuarios = room.daoUsuario().obtenerUsuarios()
-            for (item in usuarios) {
-                println("${item.nombre}, ${item.usuario}, ${item.contraseña}")
-            }
+          //  room.daoUsuario().actualizarUsuario("Charline Mora", "Chars31", "12345")
+         //   println("Se actualizó el registro")
+         //   usuarios = room.daoUsuario().obtenerUsuarios()
+         //   for (item in usuarios) {
+          //      println("${item.nombre}, ${item.usuario}, ${item.contraseña}") }
 
             //BORRAR INFO
-            room.daoUsuario().borrarUsuario("auli81")
-            println("Se borró el registro")
-            usuarios = room.daoUsuario().obtenerUsuarios()
-            for (item in usuarios){
-                println("${item.nombre}, ${item.usuario}, ${item.contraseña}")
-            }
+          //  room.daoUsuario().borrarUsuario("auli81")
+          //  println("Se borró el registro")
+         //   usuarios = room.daoUsuario().obtenerUsuarios()
+          //  for (item in usuarios){
+          //      println("${item.nombre}, ${item.usuario}, ${item.contraseña}") }
         }
     }
 }
